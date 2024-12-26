@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/llimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/img"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llvideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </VideoView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bnimg"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Image"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bnvid"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Video"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bnfulvid"
+            android:layout_width="121dp"
+            android:layout_height="match_parent"
+            android:text="Full Screen" />
+    </LinearLayout>
+</LinearLayout>
